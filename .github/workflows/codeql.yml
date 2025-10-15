@@ -1,0 +1,43 @@
+# ============================================================
+# Workflow CodeQL - Analyse de Sécurité du Code
+# ============================================================
+name: CodeQL Security Scan
+
+# ============================================================
+# DÉCLENCHEURS
+# ============================================================
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    # Tous les dimanches à minuit (UTC)
+    - cron: "0 0 * * 0"
+
+# ============================================================
+# JOBS
+# ============================================================
+jobs:
+  analyze:
+    name: Analyze Code
+    runs-on: ubuntu-latest
+
+    # Permissions pour publier les résultats dans Security
+    permissions:
+      security-events: write
+
+    steps:
+      # Récupérer le code source
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Initialiser CodeQL
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: javascript
+
+      # Analyser le code
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3

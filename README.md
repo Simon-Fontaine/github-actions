@@ -1,10 +1,10 @@
-# TP03 - CI avec scan de sécurité GitLeaks
+# TP04 - Sécurité avancée avec CodeQL
 
 [![CI Pipeline](https://github.com/Simon-Fontaine/github-actions/actions/workflows/ci.yml/badge.svg)](https://github.com/Simon-Fontaine/github-actions/actions/workflows/ci.yml)
 
 ## 🎯 Objectif
 
-Ajouter un scan de sécurité pour détecter les secrets exposés dans le code.
+Ajouter une analyse statique de code pour détecter les vulnérabilités.
 
 ## 📦 Installation
 
@@ -20,27 +20,36 @@ npm test
 
 ## 🔒 Sécurité
 
-Le workflow CI inclut maintenant :
+### Workflow CI (`ci.yml`)
 
-1. **Tests automatisés** : Vérification du code
-2. **GitLeaks** : Détection de secrets exposés (clés API, tokens, mots de passe)
+1. **Tests automatisés**
+2. **GitLeaks** : Détection de secrets exposés
 
-### Qu'est-ce que GitLeaks détecte ?
+### Workflow CodeQL (`codeql.yml`)
 
-- Clés API (AWS, Google, Azure, etc.)
-- Tokens d'authentification
-- Mots de passe en clair
-- Clés privées SSH/RSA
-- Tokens GitHub/GitLab
+3. **CodeQL** : Analyse sémantique du code
 
-### Ordre d'exécution
+### Qu'est-ce que CodeQL détecte ?
 
-```bash
-Tests → GitLeaks (seulement si tests OK)
-```
+- Injections SQL, XSS, CSRF
+- Utilisation de fonctions dangereuses
+- Gestion incorrecte des erreurs
+- Failles de sécurité connues (CVE)
+- Mauvaises pratiques de sécurité
+
+### Quand CodeQL s'exécute-t-il ?
+
+- À chaque push sur `main`
+- À chaque pull request
+- **Tous les dimanches à minuit** (détection de nouvelles vulnérabilités)
+
+### Où voir les résultats ?
+
+Onglet **Security > Code scanning alerts** sur GitHub
 
 ## 📚 Contenu
 
 - `app.js` : Fonctions mathématiques
 - `app.test.js` : Tests unitaires
-- `.github/workflows/ci.yml` : Tests + Scan de sécurité
+- `.github/workflows/ci.yml` : Tests + GitLeaks
+- `.github/workflows/codeql.yml` : Analyse de sécurité CodeQL
