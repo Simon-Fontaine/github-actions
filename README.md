@@ -1,6 +1,7 @@
 # TP04 - Sécurité avancée avec CodeQL
 
 [![CI Pipeline](https://github.com/Simon-Fontaine/github-actions/actions/workflows/ci.yml/badge.svg)](https://github.com/Simon-Fontaine/github-actions/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/Simon-Fontaine/github-actions/actions/workflows/codeql.yml/badge.svg)](https://github.com/Simon-Fontaine/github-actions/actions/workflows/codeql.yml)
 
 ## 🎯 Objectif
 
