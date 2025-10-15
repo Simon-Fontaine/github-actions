@@ -1,4 +1,4 @@
-# TP02 - Premier workflow CI
+# TP03 - CI avec scan de sécurité GitLeaks
 
 [![CI Pipeline](https://github.com/Simon-Fontaine/github-actions/actions/workflows/ci.yml/badge.svg)](https://github.com/Simon-Fontaine/github-actions/actions/workflows/ci.yml)
 
