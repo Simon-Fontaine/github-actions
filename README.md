@@ -1,6 +1,6 @@
 # TP03 - CI avec scan de sécurité GitLeaks
 
-[![CI Pipeline](https://github.com/Simon-Fontaine/github-actions/actions/workflows/ci.yml/badge.svg)](https://github.com/Simon-Fontaine/github-actions/actions/workflows/ci.yml)
+[![CI Pipeline](https://github.com/Simon-Fontaine/github-actions/actions/workflows/ci.yml/badge.svg?branch=tp-03-security-gitleaks)](https://github.com/Simon-Fontaine/github-actions/actions/workflows/ci.yml)
 
 ## 🎯 Objectif
 
