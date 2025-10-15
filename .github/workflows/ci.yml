@@ -8,9 +8,9 @@ name: CI Pipeline
 # ============================================================
 on:
   push:
-    branches: [main]
+    branches: [tp-04-security-codeql]
   pull_request:
-    branches: [main]
+    branches: [tp-04-security-codeql]
 
 # ============================================================
 # JOBS
