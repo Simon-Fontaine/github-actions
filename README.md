@@ -1,8 +1,10 @@
-# TP01 - Application de base
+# TP02 - Premier workflow CI
+
+[![CI Pipeline](https://github.com/Simon-Fontaine/github-actions/actions/workflows/ci.yml/badge.svg)](https://github.com/Simon-Fontaine/github-actions/actions/workflows/ci.yml)
 
 ## 🎯 Objectif
 
-Comprendre la structure d'une application Node.js simple avec des tests unitaires.
+Mettre en place un workflow GitHub Actions pour automatiser les tests.
 
 ## 📦 Installation
 
@@ -16,7 +18,17 @@ npm install
 npm test
 ```
 
+## 🚀 CI/CD
+
+Le workflow CI s'exécute automatiquement :
+
+- À chaque push sur `main`
+- À chaque pull request vers `main`
+
+Il vérifie que tous les tests passent avant de merger du code.
+
 ## 📚 Contenu
 
-- `app.js` : Fonctions mathématiques simples
-- `app.test.js` : Tests unitaires avec Jest
+- `app.js` : Fonctions mathématiques
+- `app.test.js` : Tests unitaires
+- `.github/workflows/ci.yml` : Workflow de tests automatisés
