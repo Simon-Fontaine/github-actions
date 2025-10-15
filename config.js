@@ -1,6 +1,6 @@
 // ============================================================
 // Configuration de l'application
 // ============================================================
-const API_KEY = "sk-prod-abc123def456ghi789jkl";
+const API_KEY = "sk-test-4eC39HqLyjWDarjtT1zdp7dc";
 
 module.exports = { API_KEY };

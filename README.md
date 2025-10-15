@@ -22,7 +22,7 @@ Le workflow CI va **ÉCHOUER** à l'étape GitLeaks car un secret est détecté 
 
 ```javascript
 // ❌ MAUVAIS
-const API_KEY = "sk-prod-abc123def456ghi789jkl";
+const API_KEY = "sk-test-4eC39HqLyjWDarjtT1zdp7dc";
 
 // ✅ BON
 const API_KEY = process.env.API_KEY;
