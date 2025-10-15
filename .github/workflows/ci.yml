@@ -8,9 +8,9 @@ name: CI Pipeline
 # ============================================================
 on:
   push:
-    branches: [main]
+    branches: [tp-06-demo-leak]
   pull_request:
-    branches: [main]
+    branches: [tp-06-demo-leak]
 
 # ============================================================
 # JOBS
