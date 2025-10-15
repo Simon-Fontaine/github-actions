@@ -8,9 +8,9 @@ name: CI Pipeline
 # ============================================================
 on:
   push:
-    branches: [main]
+    branches: [tp-05-config-secure]
   pull_request:
-    branches: [main]
+    branches: [tp-05-config-secure]
 
 # ============================================================
 # JOBS

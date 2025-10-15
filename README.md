@@ -1,7 +1,7 @@
 # TP05 - Configuration sécurisée avec variables d'environnement
 
-[![CI Pipeline](https://github.com/Simon-Fontaine/github-actions/actions/workflows/ci.yml/badge.svg)](https://github.com/Simon-Fontaine/github-actions/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/Simon-Fontaine/github-actions/actions/workflows/codeql.yml/badge.svg)](https://github.com/Simon-Fontaine/github-actions/actions/workflows/codeql.yml)
+[![CI Pipeline](https://github.com/Simon-Fontaine/github-actions/actions/workflows/ci.yml/badge.svg?branch=tp-05-config-secure)](https://github.com/Simon-Fontaine/github-actions/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/Simon-Fontaine/github-actions/actions/workflows/codeql.yml/badge.svg?branch=tp-05-config-secure)](https://github.com/Simon-Fontaine/github-actions/actions/workflows/codeql.yml)
 
 ## 🎯 Objectif
 

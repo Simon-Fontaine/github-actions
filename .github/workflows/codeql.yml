@@ -8,9 +8,9 @@ name: CodeQL Security Scan
 # ============================================================
 on:
   push:
-    branches: [main]
+    branches: [tp-05-config-secure]
   pull_request:
-    branches: [main]
+    branches: [tp-05-config-secure]
   schedule:
     # Tous les dimanches à minuit (UTC)
     - cron: "0 0 * * 0"
