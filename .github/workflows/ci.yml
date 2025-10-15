@@ -8,9 +8,9 @@ name: CI Pipeline
 # ============================================================
 on:
   push:
-    branches: [main]
+    branches: [tp-02-workflow-tests]
   pull_request:
-    branches: [main]
+    branches: [tp-02-workflow-tests]
 
 # ============================================================
 # JOBS
