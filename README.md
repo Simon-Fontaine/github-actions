@@ -1,6 +1,6 @@
 # TP02 - Premier workflow CI
 
-[![CI Pipeline](https://github.com/Simon-Fontaine/github-actions/actions/workflows/ci.yml/badge.svg)](https://github.com/Simon-Fontaine/github-actions/actions/workflows/ci.yml)
+[![CI Pipeline](https://github.com/Simon-Fontaine/github-actions/actions/workflows/ci.yml/badge.svg?branch=tp-02-workflow-tests)](https://github.com/Simon-Fontaine/github-actions/actions/workflows/ci.yml)
 
 ## 🎯 Objectif
 
