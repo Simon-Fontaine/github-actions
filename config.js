@@ -1,6 +1,6 @@
 // ============================================================
 // Configuration de l'application
 // ============================================================
-const API_KEY = process.env.API_KEY;
+const API_KEY = "sk-test-4eC39HqLyjWDarjtT1zdp7dc";
 
 module.exports = { API_KEY };
